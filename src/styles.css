@@ -1,0 +1,49 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Form and List */
+form {
+  margin: 2rem 0;
+}
+
+form input {
+  margin: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
