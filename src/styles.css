@@ -1,49 +1,84 @@
-/* Global Styles */
-html, body {
+@import 'modern-normalize/modern-normalize.css';
+
+/* Your global styles here */
+
+
+body, html {
   margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Header */
-header {
-  background: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-header nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #333;
-}
-
-/* Footer */
-footer {
-  background: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Form and List */
-form {
-  margin: 2rem 0;
-}
-
-form input {
-  margin: 0.5rem;
-}
-
-ul {
-  list-style-type: none;
   padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-color: #f0f0f0;
 }
 
-li {
-  background: #f9f9f9;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.background-art {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/Spenderly-BG11.avif') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.login-container, .register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-content, .register-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-content h1, .register-content h1 {
+  margin-bottom: 20px;
+}
+
+.login-content img, .register-content img {
+  margin-bottom: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.login-content form, .register-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-content input, .register-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-content button, .register-content button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-content button:hover, .register-content button:hover {
+  background-color: #0056b3;
 }

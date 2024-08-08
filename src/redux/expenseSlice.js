@@ -5,10 +5,16 @@ const expenseSlice = createSlice({
   initialState: [],
   reducers: {
     addExpense: (state, action) => {
-      state.push({ ...action.payload, id: Date.now() });
-    }
-  }
+      state.push({
+        id: Date.now(),
+        ...action.payload,
+      });
+    },
+    removeExpense: (state, action) => {
+      return state.filter(expense => expense.id !== action.payload);
+    },
+  },
 });
 
-export const { addExpense } = expenseSlice.actions;
+export const { addExpense, removeExpense } = expenseSlice.actions;
 export default expenseSlice.reducer;
